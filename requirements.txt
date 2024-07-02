@@ -2,3 +2,4 @@ flask
 flask-cors
 google-cloud-aiplatform
 python-dotenv
+google-generativeai
