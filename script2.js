@@ -2,7 +2,7 @@ async function convertName() {
   const input = document.getElementById('nameInput').value.trim();
   try {
     const response = await axios.post(
-      '/api/convert-name', // Update this line to match your deployment
+      '/api/convert-name',
       { name: input },
       {
         headers: {
