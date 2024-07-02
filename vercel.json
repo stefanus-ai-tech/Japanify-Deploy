@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/convert_name.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "public/**/*",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    { "src": "/api/convert-name", "dest": "/api/convert_name.py" },
+    { "src": "/(.*)", "dest": "/public/$1" }
+  ]
+}
